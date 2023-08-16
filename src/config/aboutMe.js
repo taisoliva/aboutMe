@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import gif from "../assets/programer.gif"
+import { Email, GitHub, LinkedIn } from "@mui/icons-material"
+import { Link } from "@mui/material"
 
 const Imagem = styled.div`
 width: 100px;
@@ -11,6 +13,11 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+`
+const Icone = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 `
 
 const aboutMe = [
@@ -73,6 +80,26 @@ const aboutMe = [
             Minha meta profissional é ser uma desenvolvedora full stack que domina bem tanto as habilidades de front quanto de back, é para isso é necessário estudo, e desenvolver projetos nessas áreas. Por isso busco oportunidades onde posso aprender mais sobre.
             <br /> <br />
             Sou uma eterna estudante.
+        </div>
+    },
+    {
+        title: 'Contatos',
+        content: <div>
+            Você pode entrar em contato comigo por:
+            <Icone style={{color: 'black'}}>
+                <Email /> tais15oliva@gmail.com
+            </Icone>
+            <Link href="https://www.linkedin.com/in/ta%C3%ADs-let%C3%ADcia-carvalho-13b217201/" target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'black' }}>
+                <Icone>
+                    <LinkedIn style={{ color: 'rgb(10, 103, 191)' }} /> LinkedIn
+                </Icone>
+            </Link>
+            <Link href="https://github.com/taisoliva" target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'black' }}>
+                <Icone>
+                    <GitHub  /> Portifólio
+                </Icone>
+            </Link>
+
         </div>
     },
     {

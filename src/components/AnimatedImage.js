@@ -42,5 +42,5 @@ animation: ${fadeIn} 3s ease both;
 margin-top: 10px;
 position: absolute;
 right: 5vw;
-top: 10%
+top: 100px
 `
